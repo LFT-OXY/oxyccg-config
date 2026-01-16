@@ -101,7 +101,7 @@ TaskOutput({ task_id: "<task_id>", block: true, timeout: 600000 })
 
 `[模式：研究]` - 理解需求并收集上下文：
 
-1. **Prompt 增强**：调用 `mcp__ace-tool__enhance_prompt`，**用增强结果替代原始 $ARGUMENTS，后续调用 Codex/Gemini 时传入增强后的需求** 
+1. **必须使用！** **Prompt 增强**：调用 `mcp__ace-tool__enhance_prompt`，**用增强结果替代原始 $ARGUMENTS，后续调用 Codex/Gemini 时传入增强后的需求** 
 2. **上下文检索**：调用 `mcp__ace-tool__search_context`
 3. **探索意图，需求澄清**：调用 `/superpowers:brainstorming` 和 `/interview`，通过 `寸止`澄清
 4. **需求完整性评分**（0-10 分）：
